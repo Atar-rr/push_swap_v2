@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="push_swap"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="push_swap">
+				<Option output="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="push_swap/fast">
+				<Option output="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="checker">
+				<Option output="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/checker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 checker"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="checker/fast">
+				<Option output="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/checker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/segrey/CLionProjects/push_swapv2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 checker/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/includes/push_swap.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_atoi_long_long.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_count_word.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_len_word.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_qsort.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_strsplit.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_strsub.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/get_next_line.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/len_numer_arr.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/checker/main.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/checker/move_stack.c">
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/create_lists.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/create_sort_array.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/print_stack.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/main.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/print_command.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_less_three_elem.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_more_5_elem.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_stack_a.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_stack_b.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/swap_from_bot.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/push_swap/swap_top_slow_and_fast.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/save_stack.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/stack_is_sort.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/src/swap_command.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/segrey/CLionProjects/push_swapv2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

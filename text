@@ -1,0 +1,184 @@
+
+//			if (stack_b->size > 1)
+//			{
+//				if (swap_num1 == stack_b->head->next->num || swap_num2 == stack_b->head->next->num)
+//				{
+//					swap_a_or_b(stack_b);
+//					display(stack_a, stack_b);
+//					count_command++;
+//				}
+//			}
+//			while (stack_b->head->num != swap_num1)
+//			{
+//				if (stack_b->head->num == swap_num2)
+//				{
+//					swap_pa_or_pb(stack_b, stack_a);
+//					count_command++;
+//					flag = 1;
+//				}
+//				swap_ra_or_rb(stack_b);
+//				display(stack_a, stack_b);
+//				count_command++;
+//			}
+//			swap_pa_or_pb(stack_b, stack_a);
+//			display(stack_a, stack_b);
+//			if (flag == 1)
+//				swap_a_or_b(stack_a);
+//			if (flag == 0 && stack_b->size > 1){
+//				while (stack_b->head->num != swap_num2)
+//				{
+//					swap_ra_or_rb(stack_b);
+//					display(stack_a, stack_b);
+//					count_command++;
+//				}
+//				swap_pa_or_pb(stack_b, stack_a);
+//				count_command++;
+//			}
+//			flag = 0;
+//			display(stack_a, stack_b);
+//			count_command++;
+//			array_len_tmp -= 2;
+
+sa: swap a - поменяйте местами первые 2 элемента в верхней части стека a.
+Ничего не делать, если есть только один или нет элементов).
+
+sb: swap b - поменяйте местами первые 2 элемента в верхней части стека b.
+Ничего не делать, если есть только один или нет элементов).
+
+ss: sa и sb одновременно.
+
+pa: push a - возьмите первый элемент вверху b и поместите его вверху a. Ничего не делать, если б пусто.
+
+pb: push b - возьмите первый элемент в верхней части a и поместите его в верхней части b. Ничего не делать, если пусто.
+
+ra: rotate a - сдвинуть все элементы стека a на 1.
+Первый элемент становится последним.
+
+rb: rotate b - сдвинуть все элементы стека b на 1.
+Первый элемент становится последним.
+
+rr: ra и rb одновременно.
+
+rra: reverse rotate a - сдвинуть все элементы стека a на 1.
+Последний элемент становится первым.
+
+rrb: обратный поворот b - сдвинуть все элементы стека b на 1.
+Последний элемент становится первым.
+
+ррр: rra и rrb одновременно.
+
+
+sa
+pb
+pb
+pb
+ra
+rb
+rra
+rrb
+sa
+pa
+pa
+pa
+
+ls
+
+void	sort_more_five_elem(t_link_list *stack_a, const int *sort_array, t_tmp *tmp)
+{
+	t_link_list *stack_b;
+	t_stack *tmp_head;
+	t_stack *tmp_tail;
+
+	init_link_list(&stack_b);
+	tmp->list_size = stack_a->size;
+	tmp->chunk = tmp->list_size / 5 * 2; // делем на отрезки по 20 элем
+	tmp->chunk_step = tmp->chunk;
+	while (stack_a->size > 3)
+	{
+		tmp_head = stack_a->head;
+		tmp_tail = stack_a->tail;
+		tmp->count_step_top = 0;
+		tmp->count_step_bot = 0;
+		if (tmp->count_swap == tmp->chunk)
+		{
+			tmp->i++;
+			tmp->chunk = tmp->chunk + tmp->chunk_step;
+			if (tmp->i == 3)
+				tmp->chunk = tmp->list_size - 3;
+		}
+		tmp->opora = sort_array[tmp->chunk - (tmp->chunk_step / 2)]; // было - 20
+		tmp->opora2 = sort_array[tmp->chunk];
+		search_num_from_top_and_bot_in_a(stack_a, tmp);
+//		while (tmp_head && tmp->count_step_top <= stack_a->size / 2) // написать алгоритм разбиения 5 кучек
+//		{
+//			if (tmp_head->num < tmp->opora || tmp_head->num < tmp->opora2)
+//			{
+//				tmp->swap_num1 = tmp_head->num;
+//				break;
+//			}
+//			tmp->count_step_top++;
+//			tmp_head = tmp_head->next;
+//		}
+//		while (tmp_tail && tmp->count_step_bot < tmp->count_step_top)
+//		{
+//			if (tmp_tail->num < tmp->opora || tmp_tail->num < tmp->opora2)
+//			{
+//				tmp->swap_num2 = tmp_tail->num;
+//				break;
+//			}
+//			tmp->count_step_bot++;
+//			tmp_tail = tmp_tail->previous;
+//		}
+		tmp->flag_swap_top_or_bot = tmp->count_step_top <= tmp->count_step_bot ? 0 : 1;
+		if (tmp->flag_swap_top_or_bot == 0)
+		{
+			if (tmp->count_step_top == 1)
+				swap_from_top_fast(stack_a, stack_b);
+			else
+				swap_from_top(stack_a, stack_b, tmp->swap_num1, -1);
+			if (tmp->swap_num1 < tmp->opora && stack_b->size > 1 && tmp->swap_num1 < stack_b->head->next->num)
+				swap_ra_or_rb(stack_b);
+
+		}
+		else if (tmp->flag_swap_top_or_bot == 1)
+		{
+			swap_from_bot(stack_a, stack_b, tmp->swap_num2, -1); //убрать -1 т.к массив может быть отрицательным
+			if (tmp->swap_num2 < tmp->opora && stack_b->size > 1 && tmp->swap_num2 < stack_b->head->next->num)
+				swap_ra_or_rb(stack_b);
+		}
+		tmp->count_swap++;
+	}
+	sort_less_three_elem(stack_a);
+	swap_from_stack_b(stack_a, stack_b, sort_array);
+	display(stack_a,stack_b);
+}
+
+
+{
+	int swap_num;
+	int swap_num2;
+	int num2_swap_or_no;
+	int i;
+
+	i = stack_b->size;
+	while (stack_b->size > 0)
+	{
+        swap_num = sort_array[i - 1];
+        swap_num2 = sort_array[i - 2];
+		num2_swap_or_no = find_num_for_swap_in_b(stack_b, stack_a, swap_num, swap_num2);
+        i -= num2_swap_or_no ? 2 : 1;
+       // display(stack_a,stack_b);
+	}
+}
+
+//        if (array_len <= 1)
+//            swap_num2 = -1; // не рабочая хуйня при отрицательных массивах, сменить на опцию
+
+
+/* Какие есть варинаты на 500 элементах?
+ * - подумать над проблемой, когда идет распределение последнего отрезка и наверху стэка А стоит одно из 3 чисел, которые не подлежат переносу и алгоритм начинает поднимать снизу
+ * - по факту не такая уж и проблема. Переносить в стэк Б их точно нет смысла
+ * - Как вариант скидывать их вниз, но нужно понять как выяснить какие эти три последних элемента..задать статик массив? и именно на последней итерации
+ *
+ * как вариант, если опора 2 равна последнему элементу массиива - 3, то скидывай его и снимай сверху
+ * */
