@@ -4,23 +4,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/segrey/CLionProjects/push_swapv2/libftprintf/libft/ft_qsort.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/libftprintf/libft/ft_qsort.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/create_lists.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/create_lists.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/create_sort_array.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/create_sort_array.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/print_stack.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/print_stack.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/main.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/main.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/print_command.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/print_command.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_less_three_elem.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_less_three_elem.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_more_5_elem.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_more_5_elem.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_stack_a.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_stack_a.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/sort_stack_b.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_stack_b.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/swap_from_bot.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/swap_from_bot.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/push_swap/swap_top_slow_and_fast.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/swap_top_slow_and_fast.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/save_stack.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/save_stack.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/stack_is_sort.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/stack_is_sort.c.o"
-  "/home/segrey/CLionProjects/push_swapv2/src/swap_command.c" "/home/segrey/CLionProjects/push_swapv2/cmake-build-debug/CMakeFiles/push_swap.dir/src/swap_command.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/libft/ft_qsort.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/libftprintf/libft/ft_qsort.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/create_lists.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/create_lists.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/create_sort_array.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/create_sort_array.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/print_stack.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/print_stack.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/main.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/main.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/print_command.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/print_command.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/sort_less_three_elem.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_less_three_elem.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/sort_more_5_elem.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_more_5_elem.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/sort_stack_a.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_stack_a.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/sort_stack_b.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/sort_stack_b.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/swap_from_bot.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/swap_from_bot.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/push_swap/swap_top_slow_and_fast.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap/swap_top_slow_and_fast.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/save_stack.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/save_stack.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/stack_is_sort.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/stack_is_sort.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/swap_command.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/push_swap.dir/src/swap_command.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

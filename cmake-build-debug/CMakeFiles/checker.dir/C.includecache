@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/segrey/CLionProjects/push_swapv2/includes/push_swap.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/includes/push_swap.h
 ../libftprintf/includes/ft_printf.h
-/home/segrey/CLionProjects/push_swapv2/libftprintf/includes/ft_printf.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/ft_printf.h
 ../libftprintf/includes/libft.h
-/home/segrey/CLionProjects/push_swapv2/libftprintf/includes/libft.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/libft.h
 
-/home/segrey/CLionProjects/push_swapv2/libftprintf/includes/ft_printf.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/ft_printf.h
 libft.h
-/home/segrey/CLionProjects/push_swapv2/libftprintf/includes/libft.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/libft.h
 
-/home/segrey/CLionProjects/push_swapv2/libftprintf/includes/libft.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/libft.h
 string.h
 -
 stdlib.h
@@ -34,7 +34,7 @@ stdarg.h
 limits.h
 -
 
-/home/segrey/CLionProjects/push_swapv2/src/print_stack.c
-../includes/push_swap.h
-/home/segrey/CLionProjects/push_swapv2/includes/push_swap.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/src/checker/move_stack.c
+../../includes/push_swap.h
+/Users/lmonkfis/CLionProjects/push_swap_v2/includes/push_swap.h
 
