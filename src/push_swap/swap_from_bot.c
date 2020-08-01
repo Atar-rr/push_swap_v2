@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap_from_bot.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lmonkfis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 18:01:46 by lmonkfis          #+#    #+#             */
+/*   Updated: 2020/08/01 18:01:49 by lmonkfis         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-int	swap_from_bot(t_link_list *stack_1, t_link_list *stack_2, int swap_num1, int swap_num2, int option)
+int	swap_from_bot(t_l_list *stack_1, t_l_list *stack_2, int swap_num1, int swap_num2, int option)
 {
 	int flag;
 

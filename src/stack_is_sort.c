@@ -1,7 +1,7 @@
 
 #include "../includes/push_swap.h"
 
-int stack_is_sort(t_link_list *stack, const int *sorted_array, int stack_size)
+int stack_is_sort(t_l_list *stack, const int *sorted_array, int stack_size)
 {
 	int i;
 	t_stack *tmp;

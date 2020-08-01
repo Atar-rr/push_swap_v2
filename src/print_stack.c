@@ -2,7 +2,7 @@
 
 #include "../includes/push_swap.h"
 
-void	print_stack(t_link_list *stack_a, t_link_list *stack_b, char *command)
+void	print_stack(t_l_list *stack_a, t_l_list *stack_b, char *command)
 {
 	t_stack *tmp_stack_a;
 	t_stack *tmp_stack_b;

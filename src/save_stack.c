@@ -13,7 +13,7 @@ int		check_max_min_int(char *av)
 
 }
 
-int		check_replay_num(t_link_list *stack_a)
+int		check_replay_num(t_l_list *stack_a)
 {
 	t_stack *tmp1;
 	t_stack *tmp2;
@@ -66,7 +66,7 @@ int		is_digits(char **digits, int len_digits)
 	return (1);
 }
 
-int		validate_stack(char **av, int ac, t_link_list *stack_a)
+int		validate_stack(char **av, int ac, t_l_list *stack_a)
 {
 	int len_digits;
 	int i;
@@ -94,7 +94,7 @@ int		validate_stack(char **av, int ac, t_link_list *stack_a)
 	return (1);
 }
 
-int		save_stack(char **av, int ac, t_link_list *stack_a)
+int		save_stack(char **av, int ac, t_l_list *stack_a)
 {
 	if (!validate_stack(av, ac, stack_a)){
 		while (stack_a->head)

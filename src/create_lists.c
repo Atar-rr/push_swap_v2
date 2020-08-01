@@ -34,7 +34,7 @@ t_stack 	*lst_new(char *date)
 	return (new_node);
 }
 
-void		push_back(t_link_list *list, t_stack *node)
+void		push_back(t_l_list *list, t_stack *node)
 {
 	if (list->head == NULL)
 		list->head = node;
@@ -45,7 +45,7 @@ void		push_back(t_link_list *list, t_stack *node)
 	list->tail = node;
 }
 
-void	push_front(t_link_list *list, t_stack *node)
+void	push_front(t_l_list *list, t_stack *node)
 {
 	if (list->tail == NULL)
 		list->tail = node;
@@ -58,7 +58,7 @@ void	push_front(t_link_list *list, t_stack *node)
 	list->head = node;
 }
 
-void	*lst_del_front(t_link_list *list)
+void	*lst_del_front(t_l_list *list)
 {
 	t_stack *tmp;
 
@@ -76,7 +76,7 @@ void	*lst_del_front(t_link_list *list)
 	return ((void*)1);
 }
 
-void	*lst_del_back(t_link_list *list)
+void	*lst_del_back(t_l_list *list)
 {
 	t_stack *tmp;
 
@@ -93,9 +93,9 @@ void	*lst_del_back(t_link_list *list)
 	return ((void*)1);
 }
 
-void	*init_link_list(t_link_list **list)
+void	*init_link_list(t_l_list **list)
 {
-	t_link_list	*new_node;
+	t_l_list	*new_node;
 
 	if (!(new_node = malloc(sizeof(*new_node) * 1)))
 		return NULL;

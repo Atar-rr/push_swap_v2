@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   move_stack.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lmonkfis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 18:31:05 by lmonkfis          #+#    #+#             */
+/*   Updated: 2020/08/01 18:31:08 by lmonkfis         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-void command_manager(char *command, t_link_list *stack_a, t_link_list *stack_b)
+void	command_manager(char *command, t_l_list *stack_a, t_l_list *stack_b)
 {
 	if (!ft_strcmp(command, "sa"))
 		swap_a_or_b(stack_a);
@@ -27,7 +38,7 @@ void command_manager(char *command, t_link_list *stack_a, t_link_list *stack_b)
 		swap_rra_and_rrb(stack_a, stack_b);
 }
 
-int is_command(char *str)
+int		is_command(char *str)
 {
 	static const char *command[12] = {"sa", "sb", "ss", "pa", "pb",
 									  "ra", "rb", "rr", "rra", "rrb", "rrr", NULL};
@@ -43,14 +54,14 @@ int is_command(char *str)
 	return 0;
 }
 
-int		move_stack(t_link_list *stack_a)
+int		move_stack(t_l_list *stack_a)
 {
-	t_link_list	*stack_b;
+	t_l_list	*stack_b;
 	char *str;
 
 	init_link_list(&stack_b);
 	print_stack(stack_a, stack_b, "");
-	while(get_next_line(0, &str) > 0)
+	while (get_next_line(0, &str) > 0)
 	{
 		if (is_command(str))
 		{

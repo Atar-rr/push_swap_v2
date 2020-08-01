@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_less_three_elem.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lmonkfis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 15:28:15 by lmonkfis          #+#    #+#             */
+/*   Updated: 2020/08/01 15:28:18 by lmonkfis         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-void	sort_less_three_elem(t_link_list *stack_a)
+void	sort_less_three_elem(t_l_list *stack_a)
 {
 	if (stack_a->head->num > stack_a->head->next->num && stack_a->head->num < stack_a->tail->num)
 	{

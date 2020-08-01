@@ -83,9 +83,9 @@ pa
 
 ls
 
-void	sort_more_five_elem(t_link_list *stack_a, const int *sort_array, t_tmp *tmp)
+void	sort_more_five_elem(t_l_list *stack_a, const int *sort_array, t_tmp *tmp)
 {
-	t_link_list *stack_b;
+	t_l_list *stack_b;
 	t_stack *tmp_head;
 	t_stack *tmp_tail;
 
@@ -165,7 +165,7 @@ void	sort_more_five_elem(t_link_list *stack_a, const int *sort_array, t_tmp *tmp
 	{
         swap_num = sort_array[i - 1];
         swap_num2 = sort_array[i - 2];
-		num2_swap_or_no = find_num_for_swap_in_b(stack_b, stack_a, swap_num, swap_num2);
+		num2_swap_or_no = find_num_sw_b(stack_b, stack_a, swap_num, swap_num2);
         i -= num2_swap_or_no ? 2 : 1;
        // display(stack_a,stack_b);
 	}

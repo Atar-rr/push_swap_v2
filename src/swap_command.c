@@ -1,7 +1,7 @@
 
 #include "../includes/push_swap.h"
 
-void	swap_rra_or_rrb(t_link_list *stack)
+void	swap_rra_or_rrb(t_l_list *stack)
 {
 	t_stack *tmp;
 
@@ -18,13 +18,13 @@ void	swap_rra_or_rrb(t_link_list *stack)
 	}
 }
 
-void	swap_rra_and_rrb(t_link_list *stack_a, t_link_list *stack_b)
+void	swap_rra_and_rrb(t_l_list *stack_a, t_l_list *stack_b)
 {
 	swap_rra_or_rrb(stack_a);
 	swap_rra_or_rrb(stack_b);
 }
 
-void	swap_ra_or_rb(t_link_list *stack)
+void	swap_ra_or_rb(t_l_list *stack)
 {
 	t_stack *tmp;
 
@@ -40,13 +40,13 @@ void	swap_ra_or_rb(t_link_list *stack)
 	}
 }
 
-void	swap_ra_and_rb(t_link_list *stack_a, t_link_list *stack_b)
+void	swap_ra_and_rb(t_l_list *stack_a, t_l_list *stack_b)
 {
 	swap_ra_or_rb(stack_a);
 	swap_ra_or_rb(stack_b);
 }
 
-void	swap_pa_or_pb(t_link_list *stack_out, t_link_list *stack_in)
+void	swap_pa_or_pb(t_l_list *stack_out, t_l_list *stack_in)
 {
 	t_stack *tmp;
 
@@ -80,7 +80,7 @@ void	swap_pa_or_pb(t_link_list *stack_out, t_link_list *stack_in)
 	}
 }
 
-void	swap_a_or_b(t_link_list *stack)
+void	swap_a_or_b(t_l_list *stack)
 {
 	t_stack *temp;
 
@@ -99,7 +99,7 @@ void	swap_a_or_b(t_link_list *stack)
 	}
 }
 
-void	swap_a_and_b(t_link_list *stack_a, t_link_list *stack_b)
+void	swap_a_and_b(t_l_list *stack_a, t_l_list *stack_b)
 {
 	swap_a_or_b(stack_a);
 	swap_a_or_b(stack_b);

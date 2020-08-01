@@ -1,7 +1,7 @@
 
 #include "../includes/push_swap.h"
 
-void	*create_sort_array(t_link_list *stack)
+void	*create_sort_array(t_l_list *stack)
 {
 	t_stack *tmp;
 	int i;
