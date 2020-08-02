@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/src/save_stack.c.o"
   "CMakeFiles/checker.dir/src/stack_is_sort.c.o"
   "CMakeFiles/checker.dir/src/swap_command.c.o"
+  "CMakeFiles/checker.dir/src/validate_stack.c.o"
   "checker"
   "checker.pdb"
 )

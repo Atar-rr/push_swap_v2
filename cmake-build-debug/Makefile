@@ -805,6 +805,36 @@ src/swap_command.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/swap_command.c.s
 .PHONY : src/swap_command.c.s
 
+src/validate_stack.o: src/validate_stack.c.o
+
+.PHONY : src/validate_stack.o
+
+# target to build an object file
+src/validate_stack.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/validate_stack.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/validate_stack.c.o
+.PHONY : src/validate_stack.c.o
+
+src/validate_stack.i: src/validate_stack.c.i
+
+.PHONY : src/validate_stack.i
+
+# target to preprocess a source file
+src/validate_stack.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/validate_stack.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/validate_stack.c.i
+.PHONY : src/validate_stack.c.i
+
+src/validate_stack.s: src/validate_stack.c.s
+
+.PHONY : src/validate_stack.s
+
+# target to generate assembly for a file
+src/validate_stack.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/validate_stack.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/validate_stack.c.s
+.PHONY : src/validate_stack.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -887,6 +917,9 @@ help:
 	@echo "... src/swap_command.o"
 	@echo "... src/swap_command.i"
 	@echo "... src/swap_command.s"
+	@echo "... src/validate_stack.o"
+	@echo "... src/validate_stack.i"
+	@echo "... src/validate_stack.s"
 .PHONY : help
 
 

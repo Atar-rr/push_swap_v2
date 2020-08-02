@@ -30,7 +30,7 @@ int		main(int ac, char **av)
 		{
 			if (list->size == 3 || list->size == 2)
 				sort_less_three_elem(list);
-			else if (list->size > 5)
+			else if (list->size > 4)
 				sort_more_5_elem(list, sort_array);
 		}
 		free(sort_array);

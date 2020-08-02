@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/lmonkfis/CLionProjects/push_swap_v2/src/save_stack.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/checker.dir/src/save_stack.c.o"
   "/Users/lmonkfis/CLionProjects/push_swap_v2/src/stack_is_sort.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/checker.dir/src/stack_is_sort.c.o"
   "/Users/lmonkfis/CLionProjects/push_swap_v2/src/swap_command.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/checker.dir/src/swap_command.c.o"
+  "/Users/lmonkfis/CLionProjects/push_swap_v2/src/validate_stack.c" "/Users/lmonkfis/CLionProjects/push_swap_v2/cmake-build-debug/CMakeFiles/checker.dir/src/validate_stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

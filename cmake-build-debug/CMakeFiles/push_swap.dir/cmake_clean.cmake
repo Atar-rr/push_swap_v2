@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/save_stack.c.o"
   "CMakeFiles/push_swap.dir/src/stack_is_sort.c.o"
   "CMakeFiles/push_swap.dir/src/swap_command.c.o"
+  "CMakeFiles/push_swap.dir/src/validate_stack.c.o"
   "push_swap"
   "push_swap.pdb"
 )

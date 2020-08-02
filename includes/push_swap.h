@@ -72,4 +72,5 @@ void					sort_stack_b(t_l_list *stack_a, t_l_list *stack_b, const int *sort_arr)
 int						swap_from_top_fast(t_l_list *stack_1, t_l_list *stack_2, int option);
 int						swap_from_top(t_l_list *stack_1, t_l_list *stack_2, int swap_num1, int swap_num2, int option);
 int						swap_from_bot(t_l_list *stack_1, t_l_list *stack_2, int swap_num1, int swap_num2, int option);
+int						validate_stack(char **av, int ac, t_l_list *stack_a);
 #endif //PUSH_SWAP_SORT_MORE_5_ELEM_H

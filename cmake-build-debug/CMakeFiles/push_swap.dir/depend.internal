@@ -74,3 +74,8 @@ CMakeFiles/push_swap.dir/src/swap_command.c.o
  /Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/ft_printf.h
  /Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/libft.h
  /Users/lmonkfis/CLionProjects/push_swap_v2/src/swap_command.c
+CMakeFiles/push_swap.dir/src/validate_stack.c.o
+ /Users/lmonkfis/CLionProjects/push_swap_v2/includes/push_swap.h
+ /Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/ft_printf.h
+ /Users/lmonkfis/CLionProjects/push_swap_v2/libftprintf/includes/libft.h
+ /Users/lmonkfis/CLionProjects/push_swap_v2/src/validate_stack.c

@@ -66,3 +66,8 @@ CMakeFiles/checker.dir/src/swap_command.c.o: ../libftprintf/includes/ft_printf.h
 CMakeFiles/checker.dir/src/swap_command.c.o: ../libftprintf/includes/libft.h
 CMakeFiles/checker.dir/src/swap_command.c.o: ../src/swap_command.c
 
+CMakeFiles/checker.dir/src/validate_stack.c.o: ../includes/push_swap.h
+CMakeFiles/checker.dir/src/validate_stack.c.o: ../libftprintf/includes/ft_printf.h
+CMakeFiles/checker.dir/src/validate_stack.c.o: ../libftprintf/includes/libft.h
+CMakeFiles/checker.dir/src/validate_stack.c.o: ../src/validate_stack.c
+

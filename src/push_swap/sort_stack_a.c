@@ -43,7 +43,7 @@ void	search_best_num_for_swap_stack(t_l_list *stack_a, t_tmp *tmp)
 	tmp_tail = stack_a->tail;
 	while (tmp_head && tmp->count_step_top <= stack_a->size / 2)
 	{
-		if (tmp_head->num <= tmp->opora || tmp_head->num < tmp->opora2)
+		if (tmp_head->num <= tmp->opora || tmp_head->num < tmp->opora2) //tmp_head->num <= tmp->opora
 		{
 			tmp->swap_num1 = tmp_head->num;
 			break ;
@@ -53,7 +53,7 @@ void	search_best_num_for_swap_stack(t_l_list *stack_a, t_tmp *tmp)
 	}
 	while (tmp_tail && tmp->count_step_bot < tmp->count_step_top)
 	{
-		if (tmp_tail->num <= tmp->opora || tmp_tail->num < tmp->opora2)
+		if (tmp_tail->num < tmp->opora || tmp_tail->num <= tmp->opora2) //tmp_head->num <= tmp->opora
 		{
 			tmp->swap_num2 = tmp_tail->num;
 			break ;
