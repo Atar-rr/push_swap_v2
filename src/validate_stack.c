@@ -51,7 +51,8 @@ void						check_zero(const char *digit, int j, int *zero)
 
 	i = 0;
 	while (digit[*zero] == '0'
-	|| (*zero == 0 && (digit[j] == '-' || digit[j] == '+')))
+	|| (*zero == 0 && (digit[j] == '-'
+	|| digit[j] == '+')))
 	{
 		i++;
 		*zero = i;
