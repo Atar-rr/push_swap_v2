@@ -20,7 +20,7 @@ void	print_stack(t_l_list *stack_a, t_l_list *stack_b, char *command)
 	tmp_stack_a = stack_a->head;
 	tmp_stack_b = stack_b->head;
 	ft_printf(1, "\033[2J\033[1;1H");
-	//system("clear");
+	system("clear");
 	ft_printf(1, "%-15s stack_b:\n", "stack_a");
 	while (tmp_stack_a || tmp_stack_b)
 	{

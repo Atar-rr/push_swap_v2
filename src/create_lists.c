@@ -82,7 +82,7 @@ void		*init_tmp_list(t_tmp **list)
 	new_node->chunk_parts = 0;
 	new_node->chunk = 0;
 	new_node->chunk_step = 0;
-	new_node->flag_swap_top_or_bot = 0;
+	new_node->swap_top_or_bot = 0;
 	new_node->i = 1;
 	new_node->opora2 = 0;
 	*list = new_node;

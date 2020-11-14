@@ -40,7 +40,7 @@ typedef struct			s_tmp
 	int					chunk;
 	int 				chunk_step;
 	int 				chunk_parts;
-	int 				flag_swap_top_or_bot;
+	int 				swap_top_or_bot;
 	int 				i;
 	int 				opora2;
 }						t_tmp;
@@ -67,10 +67,10 @@ int 					stack_is_sort(t_l_list *stack, const int *sorted_array, int stack_size)
 void					sort_more_5_elem(t_l_list *stack_a, const int *sort_array);
 void					sort_less_three_elem(t_l_list *stack_a);
 void					print_command(char *command);
-void					sort_stack(t_l_list *stack_a, t_l_list *stack_b, const int *sort_array, t_tmp *tmp);
+void					sort_stack(t_l_list *a, t_l_list *b, const int *sort_arr, t_tmp *tmp);
 void					sort_stack_b(t_l_list *stack_a, t_l_list *stack_b, const int *sort_arr);
 int						swap_from_top_fast(t_l_list *stack_1, t_l_list *stack_2, int option);
-int						swap_from_top(t_l_list *stack_1, t_l_list *stack_2, int swap_num1, int swap_num2, int option);
-int						swap_from_bot(t_l_list *stack_1, t_l_list *stack_2, int swap_num1, int swap_num2, int option);
+int						swap_from_top(t_l_list *s_1, t_l_list *s_2, t_tmp *tmp, int option);
+int						swap_from_bot(t_l_list *s_1, t_l_list *s_2, int option, t_tmp *tmp);
 int						validate_stack(char **av, int ac, t_l_list *stack_a);
 #endif //PUSH_SWAP_SORT_MORE_5_ELEM_H

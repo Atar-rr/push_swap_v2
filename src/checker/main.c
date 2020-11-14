@@ -12,6 +12,13 @@
 
 #include "../../includes/push_swap.h"
 
+void	free_list(t_l_list *list)
+{
+	while (list->head)
+		lst_del_front(list);
+	free(list);
+}
+
 int				main(int ac, char **av)
 {
 	t_l_list	*list;
@@ -33,11 +40,9 @@ int				main(int ac, char **av)
 			ft_printf(2, "Error\n");
 			exit(1);
 		}
-		ft_printf(1, "%s", stack_is_sort(list, sort_array, size_list) ? "OK\n" : "KO\n");
-		//вынести
-		while (list->head)
-			lst_del_front(list);
-		free(list);
+		ft_printf(1, "%s",
+			stack_is_sort(list, sort_array, size_list) ? "OK\n" : "KO\n");
+		free_list(list);
 		free(sort_array);
 	}
 }

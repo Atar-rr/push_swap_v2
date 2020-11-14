@@ -129,8 +129,8 @@ void	sort_more_five_elem(t_l_list *stack_a, const int *sort_array, t_tmp *tmp)
 //			tmp->count_step_bot++;
 //			tmp_tail = tmp_tail->previous;
 //		}
-		tmp->flag_swap_top_or_bot = tmp->count_step_top <= tmp->count_step_bot ? 0 : 1;
-		if (tmp->flag_swap_top_or_bot == 0)
+		tmp->swap_top_or_bot = tmp->count_step_top <= tmp->count_step_bot ? 0 : 1;
+		if (tmp->swap_top_or_bot == 0)
 		{
 			if (tmp->count_step_top == 1)
 				swap_from_top_fast(stack_a, stack_b);
@@ -140,7 +140,7 @@ void	sort_more_five_elem(t_l_list *stack_a, const int *sort_array, t_tmp *tmp)
 				swap_ra_or_rb(stack_b);
 
 		}
-		else if (tmp->flag_swap_top_or_bot == 1)
+		else if (tmp->swap_top_or_bot == 1)
 		{
 			swap_from_bot(stack_a, stack_b, tmp->swap_num2, -1); //убрать -1 т.к массив может быть отрицательным
 			if (tmp->swap_num2 < tmp->opora && stack_b->size > 1 && tmp->swap_num2 < stack_b->head->next->num)

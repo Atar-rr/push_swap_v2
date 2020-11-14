@@ -12,6 +12,77 @@
 
 #include "../../includes/push_swap.h"
 
+void	swap_from_top_2(t_l_list *s_1, int swap_num1)
+{
+	if (s_1->head->next->num == swap_num1)
+	{
+		swap_a_or_b(s_1);
+		print_command("sb");
+	}
+	else
+	{
+		swap_ra_or_rb(s_1);
+		print_command("rb");
+	}
+}
+
+int		swap_from_top_b(t_l_list *s_1, t_l_list *s_2, int num1, int num2)
+{
+	int	flag;
+
+	flag = 0;
+	while (s_1->head->num != num1)
+	{
+		if (s_1->head->num == num2)
+		{
+			swap_pa_or_pb(s_1, s_2);
+			print_command("pa");
+			flag = 1;
+		}
+		else
+		{
+			swap_from_top_2(s_1, num1);
+		}
+	}
+	swap_pa_or_pb(s_1, s_2);
+	print_command("pa");
+	if (flag == 1)
+	{
+		swap_a_or_b(s_2);
+		print_command("sa");
+	}
+	return (flag);
+}
+
+int		swap_from_bot_b(t_l_list *s_1, t_l_list *s_2, int num1, int num2)
+{
+	int flag;
+
+	flag = 0;
+	while (s_1->head->num != num1)
+	{
+		if (s_1->head->num == num2)
+		{
+			swap_pa_or_pb(s_1, s_2);
+			print_command("pa");
+			flag = 1;
+		}
+		else
+		{
+			swap_rra_or_rrb(s_1);
+			print_command("rrb");
+		}
+	}
+	swap_pa_or_pb(s_1, s_2);
+	print_command("pa");
+	if (flag == 1)
+	{
+		swap_a_or_b(s_2);
+		print_command("sa");
+	}
+	return (flag);
+}
+
 int		find_num_sw_b(t_l_list *stack_1, t_l_list *stack_2, int num1, int num2)
 {
 	int			count_step;
@@ -26,9 +97,9 @@ int		find_num_sw_b(t_l_list *stack_1, t_l_list *stack_2, int num1, int num2)
 		tmp = tmp->next;
 	}
 	if (count_step < stack_1->size / 2)
-		flag = swap_from_top(stack_1, stack_2, num1, num2, 1);
+		flag = swap_from_top_b(stack_1, stack_2, num1, num2);
 	else
-		flag = swap_from_bot(stack_1, stack_2, num1, num2, 1);
+		flag = swap_from_bot_b(stack_1, stack_2, num1, num2);
 	return (flag);
 }
 

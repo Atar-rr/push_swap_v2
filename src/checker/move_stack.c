@@ -6,11 +6,18 @@
 /*   By: lmonkfis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/01 18:31:05 by lmonkfis          #+#    #+#             */
-/*   Updated: 2020/08/01 18:31:08 by lmonkfis         ###   ########.fr       */
+/*   Updated: 2020/11/15 00:13:03 by lmonkfis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
+
+void	free_stack_b(t_l_list *stack_b)
+{
+	while (stack_b->head)
+		lst_del_front(stack_b);
+	free(stack_b);
+}
 
 void	command_manager(char *command, t_l_list *stack_a, t_l_list *stack_b)
 {
@@ -40,24 +47,24 @@ void	command_manager(char *command, t_l_list *stack_a, t_l_list *stack_b)
 
 int		is_command(char *str)
 {
-	static const char *command[12] = {"sa", "sb", "ss", "pa", "pb",
-									  "ra", "rb", "rr", "rra", "rrb", "rrr", NULL};
-	int i;
+	static const char	*command[12] = {"sa", "sb", "ss", "pa", "pb",
+						"ra", "rb", "rr", "rra", "rrb", "rrr", NULL};
+	int					i;
 
 	i = 0;
 	while (command[i])
 	{
 		if (!ft_strcmp(command[i], str))
-			return 1;
+			return (1);
 		i++;
 	}
-	return 0;
+	return (0);
 }
 
 int		move_stack(t_l_list *stack_a)
 {
 	t_l_list	*stack_b;
-	char *str;
+	char		*str;
 
 	init_link_list(&stack_b);
 	print_stack(stack_a, stack_b, "");
@@ -70,17 +77,16 @@ int		move_stack(t_l_list *stack_a)
 			free(str);
 			usleep(60000);
 		}
+		else if (!ft_strcmp("", str))
+			break ;
 		else
 		{
 			free(str);
-			while (stack_b->head)
-				lst_del_front(stack_b);
-			free(stack_b);
+			free_stack_b(stack_b);
 			return (0);
 		}
 	}
-	while (stack_b->head)
-		lst_del_front(stack_b);
-	free(stack_b);
+	free(str);
+	free_stack_b(stack_b);
 	return (1);
 }
